@@ -131,9 +131,8 @@ a {
   z-index: 1;
   position: relative;
 }
-.active-filter-underline .underline, .active-filter-all .underline {
-  border-bottom: 2px solid black;
-}
+.active-filter-underline .underline, .active-filter-all .underline { border-bottom: 2px solid black; }
+.active-filter-connection .connection, .active-filter-all .connection { border-bottom: 2px solid #6fc679; }
 
 .middle-title { margin: 25px 0; }
 

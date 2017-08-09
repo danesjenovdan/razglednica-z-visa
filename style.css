@@ -1,0 +1,198 @@
+body {
+  background: #f0efef;
+  font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #292929;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+li {
+  margin-bottom: 32px;
+}
+
+.white-box {
+  background: white;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 48px;
+  letter-spacing: 0.16em;
+  margin: 0;
+  line-height: 180px;
+  text-align: center;
+}
+
+.big-text {
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0 60px;
+  text-align: center;
+}
+a {
+  color: inherit;
+}
+
+#statements {
+  margin-top: 72px;
+  background: white;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  border-bottom: 13px solid transparent;
+  width: 396px;
+  margin: 0 auto;
+  position: relative;
+  top: -29px;
+}
+.boxes-active-yellow { border-bottom-color: #ffea3a; }
+.boxes-active-green { border-bottom-color: #6fc679; }
+.boxes-active-blue { border-bottom-color: #89bbff; }
+.boxes-active-violet { border-bottom-color: #ae96fd; }
+.boxes-active-orange { border-bottom-color: #ed9c4c; }
+.boxes-active-pink { border-bottom-color: #e999c8; }
+.boxes-active-circle { border-bottom-color: #c5c5c5; }
+.boxes-active-underline { border-bottom-color: #d2d2d2; }
+.boxes-active-connection { border-bottom-color: #e3e3e3; }
+
+.box {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+.box-yellow { background: #ffea3a; }
+.box-green { background: #6fc679; }
+.box-blue { background: #89bbff; }
+.box-violet { background: #ae96fd; }
+.box-orange { background: #ed9c4c; }
+.box-pink { background: #e999c8; }
+.box-circle { background: #c5c5c5; }
+.box-underline { background: #d2d2d2; }
+.box-connection { background: #e3e3e3; }
+
+
+.explanation {
+  width: 780px;
+  margin: -16px auto 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  height: 40px;
+}
+
+.texts {
+  display: flex;
+}
+
+.text {
+  background: white;
+  line-height: 32px;
+  padding: 48px 35px;
+  flex: 1;
+}
+.text-border {
+  border-right: 1px solid #292929;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 48px 0;
+}
+.text-margin { margin-right: 31px; }
+.text-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+}
+
+.active-filter-yellow .yellow, .active-filter-all .yellow { background: #ffea3a; }
+.active-filter-green .green, .active-filter-all .green { background: #6fc679; }
+.active-filter-blue .blue, .active-filter-all .blue { background: #89bbff; }
+.active-filter-violet .violet, .active-filter-all .violet { background: #ae96fd; }
+.active-filter-orange .orange, .active-filter-all .orange { background: #ed9c4c; }
+.active-filter-pink .pink, .active-filter-all .pink { background: #e999c8; }
+.active-filter-circle .circle, .active-filter-all .circle {
+  box-shadow: 0 0 0 2px #292929;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+.active-filter-underline .underline, .active-filter-all .underline {
+  border-bottom: 2px solid black;
+}
+
+.middle-title { margin: 25px 0; }
+
+.footnote {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.frame {
+  border: 4px solid #d2d2d2;
+  margin: 34px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.separator {
+  height: 1px;
+  width: 146px;
+  background: #292929;
+  margin: 0 auto;
+}
+
+.method-explanation {
+  font-size: 14px;
+  line-height: 26px;
+  padding: 0 138px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.social-box {
+  background: white;
+  padding: 26px 0;
+  text-align: center;
+  margin-top: 36px;
+}
+.social-box .big-text {
+  padding: 0 32px 0 0;
+  line-height: 48px;
+}
+.social-icon {
+  height: 48px;
+  width: 48px;
+  background-color: #dd786b;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.social-icon:hover { transform: scale(0.9); }
+
+footer {
+  line-height: 112px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}

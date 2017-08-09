@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- meta info + OG tags -->
+    <title>Danes je nov dan</title>
+    <meta name="description" content="Negujemo kritično misel. Postavljamo druga vprašanja. Hekamo nov dan. Skrbimo za varen, vključujoč in sodoben splet. In svet. Verjamemo v skupnost. Naše merilo je veselje do življenja.">
+    <meta name="author" content="Danes je nov dan, Inštitut za druga vprašanja">
+    <link rel="shortcut icon" href="http://danesjenovdan.si/favicon.ico">
+
+    <meta property="og:title" content="Razglednica z Visa" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="S pomočjo preiskovalne metode SCAN smo analizirali izjavi, ki sta ju glede objave poslankinih fotografij na Nova24TV na družbenih medijih objavila Violeta Tomić in Branko Grims. Preveri, kdo od njiju je bolj verodostojen!" />
+    <meta property="og:image" content="og-image.png" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    <!-- font -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,400,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+
+    <!-- icons -->
+    <link href="http://danesjenovdan.si/borut/css/genericons.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Razglednici z Visa</h1>
+
+    <div class="big-text">Med razvojem prihajajočega <a href="http://danesjenovdan.si/detektorlisic/">Detektorja lisic</a> smo sklenili metodo SCAN preveriti na izjavah glavnih akterjev včerajšnjega obračuna, ki je na družbenih medijih sledil objavi fotografij poslanke Violete Tomić na Nova24TV.</div>
+
+    <div id="statements">
+      <div class="filters">
+        <div :class="'boxes boxes-active-' + selectedFilter">
+          <div v-for="(explanation, name) in filters"
+                :class="['box', 'box-' + name]"
+                @click="activateFilter(name)">
+          </div>
+        </div>
+        <div class="explanation">{{selectedFilterDescription}}</div>
+      </div>
+      <div :class="'texts active-filter-' + (selectedFilter || 'all')">
+        <div class="text text-border">
+          <h2 class="text-title">Violeta Tomić</h2>
+          <span class="pink">Končno</span> <span class="underline">se <span class="blue"><span class="circle">odpravim</span></span></span> na dopust. <span class="yellow">Kot ponavadi</span> <span class="circle">vstanem</span> ob <span class="violet">3h</span> zjutraj in <span class="circle">lovim</span> trajekt ob <span class="violet">9h</span>. Toda gneča je bila neznosna,tako <span class="circle">so</span> <span class="circle">me</span> pustili v koloni ,prepoln trajekt je odplul, zato <span class="violet"><span class="circle">sva</span></span> z Budo čakala celih <span class="violet">6 h</span> na žgočem soncu naslednjega. <span class="yellow">Zelo neprijetno</span>. <span class="pink">Potem</span> se <span class="pink">končno</span> izčrpana <span class="circle">namestim</span>,ko <span class="circle">zagledam</span> <span class="green">Branka Grimsa</span> s fotoaparatom. <span class="yellow">Pa si mislim: :"Ova noč nije <span class="circle">moj</span> dan"😀 Očitno je <span class="green">poslanec SDS</span> peljal svojo <span class="green">družinico</span> (zeno in oba otroka)na dopust v "komunistično Meko". Bila <span class="circle">sem</span> dokaj presenečena, da zahaja v te kraje.</span> Pri izhodu sem ga <span class="yellow">prijazno</span> <span class="orange">pozdravila</span>, saj <span class="violet"><span class="circle">sva</span></span> vendar kolega in sodelavca. Pa je komaj kaj iztisnil iz <span class="circle">sebe</span>. <span class="yellow">Slaba vest? ?</span>
+        </div>
+        <div class="text">
+          <h2 class="text-title">Branko Grims</h2>
+          <span class="yellow">Nobena laž ni <span class="green">levičarjem</span> dovolj umazana, ko <span class="circle">hočejo</span> oblatiti sočloveka...
+          <span class="green">Violete Tomič</span> na dopustu niti opazil <span class="circle">nisem</span>. Z <span class="circle">njeno</span> "sporno" sliko ter <span class="circle">njeno</span> objavo v medijih <span class="circle">nimam</span>
+          popolnoma absolutno NIČ!</span>
+          Za celo kolobocijo <span class="circle">sem</span> izvedel šele danes, po objavi v medijih.
+          <span class="yellow">Laž je nesmrtna duša <span class="green">levičarjev</span>!! (p. po: <span class="green">Vaclav Havel</span>).</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="big-text middle-title">
+      Izsledki metode SCAN
+    </div>
+
+    <div class="texts">
+      <div class="text text-margin">
+        <ol>
+          <li>Razen uporabljenega citata ni noben stavek v nikalni obliki.
+          <li>Izjavo zaznamuje konstantna repeticija besedišča, kar pomeni, da ne gre za spremembo jezika, ki bi bila zanimiva z vidika metode SCAN. Resda avtorica subjekta enkrat označi z imenom in priimkom, drugič pa kot poslanca, vendar nobene od alternativ ne ponovi, kar pomeni, da nobena od besed ni sidrna.
+          <li>V medosebnih odnosih vpletenih je preko izjave izražena napetost. V besedilu se to vidi v odvečnem poudarjanju (“sem ga prijazno pozdravila”), ki kaže na emotivni naboj.
+          <li>Avtorica skozi celo izjavo konsistentno naslavlja bralca in se z njim pogovarja, nemotivirano mu pojasnjuje. Nikjer ne zatrdi, da jo je on slikal in ga eksplicitno tega nikjer ne obtoži.
+        </ol>
+        <div class="footnote">
+          Opomba: Avtorica objave na družbenih medijih ni naknadno spreminjala ali dopolnjevala.
+        </div>
+      </div>
+      <div class="text">
+        <ol>
+          <li>Izjava se začne v nikalni obliki. Negacija se nadaljuje skozi celotno izjavo, saj je ta v več kot 80 % v nikalni obliki, kar kaže na avtorjevo nezavezanost k vsebini.
+          <li>V kritičnem delu izjave se spremeni jezik, ki označuje dejanje, od katerega se avtor ograjuje: dvakrat uporabi besedo objava, enkrat pa kolobocija. Ponavljajoča beseda objava je sidro, vsaka sprememba jezika pa je odraz spremembe odnosa do realnosti.
+          <li>V izjavi je kršeno generalno pravilo metode SCAN, ki pravi, da če subjekt očitanega dejanja ne zanika eksplicitno in direktno, tega ne moremo storiti namesto njega.
+          <li>Izjavo zaznamuje nemotivirano pojasnjevanje. Avtor ni eksplicitno izzvan oz. obtožen, eksplicitno tudi ne zanika očitka, pač pa se trudi zanikati stvari, ki jih nihče ni insinuiral.
+          <li>Avtor v izjavi po nepotrebnem pretirava v ključnem delu, ko ponovi dva pomensko enaka pridevnika, stavek pa konča z velikimi tiskanimi črkami in klicajem.
+        </ol>
+        <div class="footnote">
+          Opomba: Avtor je izjavo od izvirne oblike, ki jo analiziramo, še dvakrat spremenil oz. dopolnil, kar je indikativno samo po sebi. Naslednje verzije zaznamujejo zunanji dogodki (objave v medijih itd.), ki so vplivali na artikulacijo.
+        </div>
+      </div>
+    </div>
+
+    <div class="big-text frame">
+      Na podlagi faktorjev, ki jih kot indikativne definira preiskovalna metoda SCAN, je mogoče skleniti, da je izjava Violete Tomić bistveno bolj dosledna od izjave Branka Grimsa.
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="big-text middle-title">
+      O metodi <i>SCAN</i>
+    </div>
+
+    <div class="method-explanation">
+      <a href="https://en.wikipedia.org/wiki/Statement_analysis">SCAN</a> je preiskovalna metoda, ki jo za iskanje nedoslednosti v izjavah uporabljajo številne preiskovalne agencije po svetu. Analizirano besedilo se vizualno označi glede na predpisane kriterije, označeni deli pa predstavljajo točke interesa za preiskovalce. S pomočjo metode SCAN ti dobijo osnovno idejo o tem, katere vidike izjave je potrebno temeljiteje raziskati oz. postaviti pod vprašaj. Metoda SCAN ni detektor laži, pač pa zgolj izpostavi dele izjave, ki so strukturno zanimivi ter jih je treba vsebinsko še raziskati.
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="social-box">
+      <span class="big-text">Povej naprej!</span>
+      <a href="https://www.facebook.com/sharer.php?u=[LINK]&amp;t=Verjameš%20zgodbi%20Branka%20Grimsa%20ali%20Violete%20Tomić?%20Preveri,%20kaj%20o%20njuni%20(ne)doslednosti%20pravi%20preiskovalna%20metoda%20SCAN" class="genericon genericon-facebook-alt social-icon"></a>
+      <a href="https://twitter.com/intent/tweet?url=[LINK]&amp;via=danesjenovdan&amp;text=Verjameš%20zgodbi%20Branka%20Grimsa%20ali%20Violete%20Tomić?%20Preveri,%20kaj%20o%20njuni%20(ne)doslednosti%20pravi%20preiskovalna%20metoda%20SCAN&amp;original_referer=[LINK]" class="genericon genericon-twitter social-icon"></a>
+      <a href="mailto:?subject=Razglednici z Visa&amp;body=Verjameš zgodbi Branka Grimsa ali Violete Tomić? Preveri, kaj o njuni (ne)doslednosti pravi preiskovalna metoda SCAN.[LINK]" class="genericon genericon-mail social-icon"></a>
+    </div>
+
+    <footer>Danes je nov dan in <a href="http://www.ebsi.eu/">Evropski inštitut za vedenjske študije</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

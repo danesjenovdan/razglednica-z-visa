@@ -69,10 +69,26 @@ a {
 .boxes-active-underline { border-bottom-color: #d2d2d2; }
 .boxes-active-connection { border-bottom-color: #e3e3e3; }
 
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .box {
   width: 44px;
   height: 44px;
   cursor: pointer;
+}
+.box:hover {
+  animation-name: bounce;
+  animation-duration: 0.4s;
 }
 .box-yellow { background-color: #ffea3a; }
 .box-green { background-color: #6fc679; }
@@ -94,7 +110,7 @@ a {
 }
 .box-connection {
   background-color: #e3e3e3;
-  background-image: url('./puscica.png');
+  background-image: url('./puscica2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80% 30%;

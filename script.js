@@ -23,7 +23,7 @@ $(document).ready(function() {
         if (this.selectedFilter) {
           return this.filters[this.selectedFilter];
         } else {
-          return 'Za razlago scan parametrov, klikni na zgornji barvni označevalec.';
+          return 'Za razlago scan parametrov klikni na zgornji barvni označevalec.';
         }
       }
     },

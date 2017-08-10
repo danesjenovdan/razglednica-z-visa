@@ -120,8 +120,8 @@ a {
 .explanation {
   max-width: 780px;
   margin: -16px auto 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
   height: 40px;
 }
@@ -251,4 +251,13 @@ footer {
   body {
     font-size: 18px;
   }
+  
+ .title {
+  line-height: 1.1em;
+  margin-bottom: 1em;
+}
+
+.method-explanation {
+  padding: 0 20px;
+}
 }

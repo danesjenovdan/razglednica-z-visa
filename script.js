@@ -20,7 +20,11 @@ $(document).ready(function() {
     },
     computed: {
       selectedFilterDescription: function() {
-        return this.filters[this.selectedFilter];
+        if (this.selectedFilter) {
+          return this.filters[this.selectedFilter];
+        } else {
+          return 'Za razlago scan parametrov, klikni na zgornji barvni označevalec.';
+        }
       }
     },
     methods: {

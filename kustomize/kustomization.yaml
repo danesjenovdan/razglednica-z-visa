@@ -8,4 +8,4 @@ resources:
 images:
   - name: razglednica-z-visa
     newName: rg.fr-par.scw.cloud/djnd/razglednica-z-visa
-    newTag: 'latest'
+    newTag: 'b4b19baa07748777b7c8c6a2d29f27de70c32853'

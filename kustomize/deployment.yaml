@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: razglednica-z-visa
+  labels:
+    app: razglednica-z-visa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: razglednica-z-visa
+  template:
+    metadata:
+      labels:
+        app: razglednica-z-visa
+    spec:
+      containers:
+        - name: razglednica-z-visa
+          image: razglednica-z-visa
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 50Mi
+              cpu: 50m
+            limits:
+              memory: 50Mi
+              cpu: 50m

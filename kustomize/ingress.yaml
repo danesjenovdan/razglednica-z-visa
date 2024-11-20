@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: razglednica-z-visa
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - razglednica-z-visa.djnd.si
+        - razglednica-z-visa.danesjenovdan.si
+      secretName: razglednica-z-visa-tls
+  rules:
+    - host: razglednica-z-visa.djnd.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: razglednica-z-visa
+                port:
+                  number: 80
+    - host: razglednica-z-visa.danesjenovdan.si
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: razglednica-z-visa
+                port:
+                  number: 80

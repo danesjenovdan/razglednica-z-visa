@@ -5,7 +5,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   tls:
     - hosts:
         - razglednica-z-visa.djnd.si
@@ -13,7 +13,7 @@ spec:
       secretName: razglednica-z-visa-tls
   rules:
     - host: razglednica-z-visa.djnd.si
-      http:
+      http: &http_paths
         paths:
           - path: /
             pathType: Prefix
@@ -23,12 +23,4 @@ spec:
                 port:
                   number: 80
     - host: razglednica-z-visa.danesjenovdan.si
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: razglednica-z-visa
-                port:
-                  number: 80
+      http: *http_paths
